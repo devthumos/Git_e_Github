@@ -1,0 +1,53 @@
+Git e Github // devthumos
+-------------------------------------------------------------------------
+
+$$ COMANDOS ESSENCIAIS GIT$$
+
+-->	git config --global user.name ""
+	-->	  Configura o usuário
+-->	git config --global user.email ""
+	-->	  Configura o email do usuário
+-->	git config user.name ""
+	-->	  Mostra o nome do usuário	
+-->	git config user.email ""
+	-->	  Mostra o email do usuário
+-->	Uma boa parte dos comandos essenciais do linux tem no bash Git
+-->	git init
+	-->	  Criação de repositório local
+-->	git status
+	-->	  Mostra as alterações
+-->	git add file
+	-->	  Adciona o arquivo file ao commit
+--> 	git commit -m 
+	-->   Adciona um comentário ao commit e fecha o container
+-->	git log
+	--> 	Mostra as informações dos commits
+		--> 	git log --graph, git log --oneline
+			-->	Mostra as informações dos commits e o grafo dos commits, Mostra as informações dos commits resumidamente e em uma linha
+-->	git checkout identificação
+	-->	Rastreia uma versão
+-->	git branch 
+	--> 	Head atual
+-->	git checkout master
+	-->	Rastreia o último commit
+-->	git diff
+	-->	Mostra alterações anteriores
+-->	git restore file 
+	-->	Restaura o arquivo
+-->	git restore --staged
+	-->	Retira o file do container commit
+-->	git reset --hard identificação
+	-->	Desfaz comit
+
+$$ Criando rammificações do projeto (branch e merge) $$
+
+--> 	permite que testes e mudanças no projeto possam ser feitas
+	sem modificar o projeto original
+--> 	git checkout -b ramificação
+	--> 	Cria uma nova ramificação no projeto
+--> 	git checkout ramificação
+	--> 	Navega entre as ramificações
+--> 	log --all 
+	--> 	Mostra todos as ramificações
+--> 	git merge ramificação
+	-->	Funde ramificações
